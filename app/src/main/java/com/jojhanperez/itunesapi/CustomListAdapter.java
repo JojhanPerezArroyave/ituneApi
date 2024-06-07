@@ -63,7 +63,7 @@ public class CustomListAdapter extends BaseAdapter {
             viewHolder.txtTrackName.setText(result.getTrackName());
             viewHolder.txtArtistName.setText(result.getArtistName());
             Picasso.get().load(result.getArtworkUrl100()).error(R.drawable.musica).into(viewHolder.imgPhoto);
-            String destFilename = context.getCacheDir() + "/" + result.getTrackId() + ".m4a";
+            String destFilename = context.getCacheDir() + "/" + result.getTrackId() + ".tmp.m4a";
             if (new File(destFilename).exists()) {
                 viewHolder.imgAction.setImageResource(R.drawable.play);
                 result.setState(2);
