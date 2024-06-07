@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iTunesAPI</string>
+    <string name="itunesapi">Tu Música</string>
+    <string name="search">Buscar</string>
+    <string name="image">ImageMusica</string>
+    <string name="imageaction">ImageAction</string>
+</resources>
