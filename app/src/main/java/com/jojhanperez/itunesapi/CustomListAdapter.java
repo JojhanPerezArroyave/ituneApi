@@ -21,7 +21,7 @@ public class CustomListAdapter extends BaseAdapter {
     private Context context = null;
     private List<Result> results = null;
 
-    public CustomListAdapter(Context newContext, List<Result> newResults){
+    public CustomListAdapter(Context newContext, List<Result> newResults) {
         context = newContext;
         results = newResults;
     }
@@ -48,12 +48,12 @@ public class CustomListAdapter extends BaseAdapter {
 
 
         //ConvertView es null entonces no tiene elementos creados
-        if (convertView == null){
+        if (convertView == null) {
             LayoutInflater layout = LayoutInflater.from(context);
             convertView = layout.inflate(ROW_RESOURCE, parent, false);
             viewHolder = new ViewHolder(convertView);
             convertView.setTag(viewHolder);
-        }else{
+        } else {
             //En caso de que este creado se lo recupera
             viewHolder = (ViewHolder) convertView.getTag();
         }
@@ -79,13 +79,13 @@ public class CustomListAdapter extends BaseAdapter {
         return convertView;
     }
 
-    public static class ViewHolder{
+    public static class ViewHolder {
         ImageView imgPhoto = null;
         TextView txtTrackName = null;
         TextView txtArtistName = null;
         ImageView imgAction = null;
 
-        public ViewHolder(View view){
+        public ViewHolder(View view) {
             imgPhoto = view.findViewById(R.id.imgPhoto);
             txtTrackName = view.findViewById(R.id.txtTrackName);
             txtArtistName = view.findViewById(R.id.txtArtistName);

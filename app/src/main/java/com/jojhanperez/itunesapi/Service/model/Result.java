@@ -1,16 +1,15 @@
 package com.jojhanperez.itunesapi.Service.model;
 
 
-
 public class Result {
     private int trackId;
     private String artistName;
     private String trackName;
     private String previewUrl;
     private String artworkUrl100;
-    private  int state;
+    private int state;
 
-    public Result(int newtrackId , String newArtistName, String newTrackName, String newPreviewUrl, String newArtworkUrl100){
+    public Result(int newtrackId, String newArtistName, String newTrackName, String newPreviewUrl, String newArtworkUrl100) {
         trackId = newtrackId;
         artistName = newArtistName;
         trackName = newTrackName;
